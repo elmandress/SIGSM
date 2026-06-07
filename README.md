@@ -17,7 +17,7 @@ SIGSM es un sistema de gestión hospitalaria desarrollado para el Hospital de Cl
 
 | Capa | Tecnología |
 |------|-----------|
-| Frontend | HTML · CSS · Bootstrap 5.3 |
+| Frontend | HTML · CSS |
 | Backend | PHP |
 | Base de datos | MySQL |
 | Infraestructura | Linux · Docker · SSH |
