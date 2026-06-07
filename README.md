@@ -65,7 +65,7 @@ Gestión y seguimiento del transporte mediante ambulancias y otros vehículos de
 
 | Capa | Tecnología |
 |------|-----------|
-| Frontend | HTML · CSS · Bootstrap 5.3 |
+| Frontend | HTML · CSS |
 | Backend | PHP |
 | Base de datos | MySQL / MariaDB |
 | Infraestructura | GNU/Linux · Docker · SSH |
