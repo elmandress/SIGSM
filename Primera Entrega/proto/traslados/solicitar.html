@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGSM - Solicitar Traslado</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h1 class="logo">SIGSM</h1>
+
+        <ul class="menu">
+            <li><a href="../dashboard/index.html">Dashboard</a></li>
+            <li><a href="../traslados/index.html">Traslados</a></li>
+            <li><a href="../documentos/index.html">Documentos</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+
+            <div class="header-left">
+                <h2>Solicitar Traslado</h2>
+            </div>
+
+            <div class="header-right">
+                <span class="user">Juan Pérez</span>
+                <span class="role">Operador</span>
+                <a href="../login.html">
+                    <button class="logout">Salir</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h2>Solicitar Traslado</h2>
+
+            <!-- ================= TIPO ================= -->
+            <div class="card">
+                <h3>Tipo de traslado</h3>
+
+                <div class="tipo-selector">
+                    <button class="btn-primary">Paciente</button>
+                    <button class="btn-primary">Carga</button>
+                </div>
+            </div>
+
+            <!-- ================= FORM ================= -->
+            <div class="card" style="margin-top:20px;">
+                <h3>Datos del traslado</h3>
+
+                <form class="form">
+
+                    <div class="form-group">
+                        <label>Origen</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Destino</label>
+                        <input type="text">
+                    </div>
+
+                    <!-- PACIENTE -->
+                    <div class="bloque">
+
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Cédula</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Quién recibe</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <!-- CARGA -->
+                    <div class="bloque">
+
+                        <div class="form-group">
+                            <label>Descripción de la carga</label>
+                            <textarea></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- COMUNES -->
+                    <div class="form-group">
+                        <label>Prioridad</label>
+                        <select>
+                            <option>Baja</option>
+                            <option>Media</option>
+                            <option>Alta</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hora de llegada solicitada</label>
+                        <input type="datetime-local">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Observaciones</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <button type="button" class="btn-primary">Solicitar traslado</button>
+
+                </form>
+            </div>
+
+            <!-- ================= SOLICITUDES REALIZADAS ================= -->
+            <div class="card" style="margin-top:20px;">
+                <h3>Solicitudes realizadas</h3>
+
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Estado</th>
+                        <th>Prioridad</th>
+                        <th>Hora solicitada</th>
+                    </tr>
+
+                    <tr>
+                        <td>#001</td>
+                        <td>Hospital A</td>
+                        <td>Hospital B</td>
+                        <td><span class="estado pendiente">Pendiente</span></td>
+                        <td><span class="badge alta">Alta</span></td>
+                        <td>10:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>#002</td>
+                        <td>Clínica X</td>
+                        <td>Hospital Central</td>
+                        <td><span class="estado curso">En curso</span></td>
+                        <td><span class="badge media">Media</span></td>
+                        <td>12:30</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGSM - Nuevo Traslado</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h1 class="logo">SIGSM</h1>
+
+        <ul class="menu">
+            <li><a href="../dashboard/index.html">Dashboard</a></li>
+            <li><a href="../traslados/index.html">Traslados</a></li>
+            <li><a href="../documentos/index.html">Documentos</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+
+            <div class="header-left">
+                <h2>Nuevo Traslado</h2>
+            </div>
+
+            <div class="header-right">
+                <span class="user">Juan Pérez</span>
+                <span class="role">Operador</span>
+                <a href="../login.html">
+                    <button class="logout">Salir</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h2>Ejecutar Traslado</h2>
+
+            <div class="card">
+                <h3>Seleccionar solicitud</h3>
+
+                <table id="tablaSolicitudes">
+                    <tr>
+                        <th>ID</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Tipo</th>
+                        <th>Prioridad</th>
+                    </tr>
+
+                    <tr>
+                        <td>#001</td>
+                        <td>Hospital A</td>
+                        <td>Hospital B</td>
+                        <td>Paciente</td>
+                        <td><span class="badge prioridad-alta">Alta</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>#002</td>
+                        <td>Depósito Central</td>
+                        <td>Hospital Norte</td>
+                        <td>Carga</td>
+                        <td><span class="badge prioridad-alta">Media</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- INFO -->
+            <div class="card" style="margin-top:20px;">
+                <h3>Detalle</h3>
+
+                <p><b>Paciente:</b> <span>Juan Pérez</span></p>
+                <p><b>Cédula:</b> <span>45678912</span></p>
+                <p><b>Tipo:</b> <span>Paciente</span></p>
+                <p><b>Teléfono:</b> <span>099123456</span></p>
+                <p><b>Recibe:</b> <span>Dr. Gómez</span></p>
+                <p><b>Piso:</b> <span>2</span></p>
+                <p><b>Sala:</b> <span>A1</span></p>
+                <p><b>Puerta:</b> <span>12</span></p>
+                <p><b>Prioridad:</b> <span>Alta</span></p>
+                <p><b>Requiere:</b> <span>Camilla, Oxígeno</span></p>
+                <p><b>Observaciones:</b> <span>Paciente crítico</span></p>
+            </div>
+
+            <!-- FORM -->
+            <div class="card" style="margin-top:20px;">
+                <h3>Ejecutar</h3>
+
+                <form class="form">
+
+                    <div class="form-group">
+                        <label>Vehículo</label>
+                        <select><option>Ambulancia 1</option></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chofer</label>
+                        <select><option>Juan Pérez</option></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Enfermero</label>
+                        <select><option>María López</option></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Origen</label>
+                        <input type="text" value="Hospital A">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Destino</label>
+                        <select>
+                            <option>Hospital B</option>
+                            <option>Hospital Central</option>
+                        </select>
+                    </div>
+
+                    <div class="camposPaciente">
+
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="text" value="099123456">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Recibe</label>
+                            <input type="text" value="Dr. Gómez">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Piso</label>
+                            <input type="text" value="2">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Sala</label>
+                            <input type="text" value="A1">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Puerta</label>
+                            <input type="text" value="12">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text" value="Juan Pérez">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Cédula</label>
+                            <input type="text" value="45678912">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Requiere</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" checked> Camilla</label>
+                                <label><input type="checkbox" checked> Oxígeno</label>
+                                <label><input type="checkbox"> Aislamiento</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prioridad</label>
+                        <select>
+                            <option>Baja</option>
+                            <option>Media</option>
+                            <option selected>Alta</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Observaciones</label>
+                        <textarea>Paciente crítico</textarea>
+                    </div>
+
+                    <button type="button" class="btn-primary">Iniciar traslado</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
