@@ -6,7 +6,7 @@ Esta carpeta contiene lo que corresponde a la primera entrega: el prototipo de i
 
 ## Qué hay acá
 
-- **`proto/`** – prototipo en HTML y CSS, sin JavaScript (todavía no lo dimos en clase, así que no hacía falta para esta entrega). Adentro:
+- **`proto/`** – prototipo en HTML y CSS, sin JavaScript (ya lo dimos en clase, pero todavía no lo metimos en este prototipo). Adentro:
   - `index.html` → `login.html` — pantalla de entrada y login.
   - `dashboard/` — resumen general una vez logueado.
   - `admin/` — alta, edición y listado de categorías, funcionarios, usuarios y vehículos.
@@ -14,7 +14,8 @@ Esta carpeta contiene lo que corresponde a la primera entrega: el prototipo de i
   - `traslados/` — listado, solicitud y alta de traslados en ambulancia.
   - `portal-paciente.html` — portal mobile-first al que se entra escaneando un QR, sin login.
   - `css/` — `layout.css` y `components.css` para todas las pantallas internas (login, dashboard, admin, documentos, traslados), y `portal.css` aparte solo para el portal del paciente, porque es una pantalla pública con su propio diseño.
-- **`Documentacion/`** – justificación tecnológica, cómo armar el entorno de desarrollo y cómo manejamos el repositorio y los commits.
+- **`Documentacion/`** – justificación tecnológica, modelado de datos, cómo armar el entorno de desarrollo y cómo manejamos el repositorio y los commits.
+- **DER y MR de ambos módulos** (`.drawio`) y `Modelado de Datos.pdf` — diagramas y restricciones de la base, detallados en [Modelado de Datos](Documentacion/04-Modelado-de-Datos.md).
 
 ## Cómo ver el prototipo
 
@@ -27,6 +28,7 @@ El recorrido normal es `index.html` → `login.html` → `dashboard/`, `admin/`,
 - [Justificación Tecnológica](Documentacion/01-Justificacion-Tecnologica.md)
 - [Configuración del Entorno de Desarrollo](Documentacion/02-Configuracion-Entorno-Desarrollo.md)
 - [Control de Versiones y Repositorio](Documentacion/03-Control-Versiones-Repositorio.md)
+- [Modelado de Datos](Documentacion/04-Modelado-de-Datos.md)
 
 ## Equipo
 
